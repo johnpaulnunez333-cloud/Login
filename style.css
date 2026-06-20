@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('IT.jpg');
+    background-position: center;
+    background-size: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.login-page {
+    width: 100%;
+    padding: 40px 30px;
+    max-width: 340px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdena, sans-serif;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page h1 {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 15px auto;
+}
+
+.input-group i {
+    color: #555555;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 10px;
+    align-items: center;
+}
+
+#loginBtn {
+    width: 100%;
+    max-width: 340px;
+    background-color: #7C0A02;
+    border: none;
+    height: 40px;
+    color: #FFFFFF;
+    font-family: Arial, Sans-Serif;
+    border-radius: 15px;
+    transition: all 0.3ease;
+    cursor: pointer;
+}
+
+#loginBtn:hover {
+    background-color: #A3140F;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 15px rgba(124, 10, 2,0.4);
+}
+
+.social-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #111111;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 340px;
+    margin-top: 20px;
+}
+
+.social-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.social-circle i {
+    font-size: 20px;
+    color: #111111;
+}
