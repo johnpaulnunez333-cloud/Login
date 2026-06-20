@@ -14,7 +14,7 @@ function loginPage() {
         }
 
         try {
-            const response = await fetch("https://your-backend.com/api/login", {
+            const response = await fetch("https://login-aggy.onrender.com/api/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -26,17 +26,11 @@ function loginPage() {
                 })
             });
 
-            if (!response.ok) {
-                throw new Error(`Server responded with status ${response.status}`);
-            }
-
             const data = await response.json();
             console.log("Server response:", data);
 
             if (data.success) {
-                alert("Login Successful");
-                // e.g. redirect, store token, etc.
-                // localStorage.setItem("token", data.token);
+                alert("Login Successful! Welcome, " + data.username);
             } else {
                 alert(data.message || "Login failed.");
             }
