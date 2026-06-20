@@ -49,5 +49,15 @@ def login():
 
     return jsonify({"success": True, "message": "Login successful.", "username": user["username"]}), 200
 
+@app.route("/api/users", methods=["GET"])
+def get_users():
+    safe_users = [{"username": u["username"], "email": u["email"]} for u in users]
+    return jsonify({"users": safe_users}), 200
+
+@app.route("/")
+def index():
+    return jsonify({"message": "Server is running!"}), 200
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
+
